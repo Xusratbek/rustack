@@ -1,1 +1,20 @@
-@import "tailwindcss";
+    @import "tailwindcss";
+
+
+    .fira {
+        font-family: "Fira Sans";
+    }
+
+    .container{
+        margin: 0 auto;
+        max-width: 1320px;
+        width: 100%;
+        
+        
+    }
+
+    button {
+        cursor: pointer;
+    }
+
+   
