@@ -1,3 +1,4 @@
+    
     @import "tailwindcss";
 
 
@@ -13,8 +14,49 @@
         
     }
 
+    
+
     button {
         cursor: pointer;
     }
+    .burger-line{
+      width: 18px;
+      height: 2px;
+      background-color: black;
+      transition: 0.3s ease-out;
+    }
 
-   
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px; 
+  height: 24px;
+  border: 2px solid black; 
+  border-radius: 4px;       
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s;     
+}
+
+input[type="checkbox"]:checked {
+  background-color: black;   
+  border-color: black;
+}
+
+
+input[type="checkbox"]::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 12px;
+  border: solid white;  
+  border-width: 0 2.5px 2.5px 0;
+  transform: rotate(45deg);
+  opacity: 0;          
+  top: 3px;            
+  left: 8px;
+}
+
+input[type="checkbox"]:checked::after {
+  opacity: 1;
+}

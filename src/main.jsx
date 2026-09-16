@@ -1,15 +1,13 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import './i18n/i18n.js'
+import "flag-icons/css/flag-icons.min.css";
+import { createRoot } from 'react-dom/client';
+import './i18n/i18n.js';
+import './index.css';
 
-import App from './App.jsx'
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom';
+import App from './App.jsx';
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
     <BrowserRouter>
       <App />
     </BrowserRouter>
-  </StrictMode>
 )
