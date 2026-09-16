@@ -11,6 +11,7 @@ import { DownOutlined } from '@ant-design/icons';
 import { Dropdown, Space } from 'antd';
 import CatologModal from '../Modal/CatologModal'
 import { useTranslation } from 'react-i18next'
+import search from '../../assets/icons/search.svg'
 
 
 
@@ -168,8 +169,9 @@ const items = langs.map(lang => ({
         </div>
       </header>
       <hr className='text-[#FEC80B]' />
-      <div className='container flex items-center gap-10 justify-between container pt-4 pb-8 '>
-        <div >
+      <div className='container  max-xl:px-4 max-lg:px-4 max-lg:pt-8   flex items-center gap-10 justify-between container pt-4 pb-8 '>
+        <div className='flex gap-8 items-center'>
+          <div>
           <button onClick={toggleCatalog} className='flex gap-4 px-5 py-2.5 rounded-sm border-none fira font-normal text-lg leading-[110%]  bg-[#fec80b] hover:bg-yellow items-center'>
             <div className='flex flex-col gap-1 items-center'>
               <div className={`${catalogModal ? 'rotate-[45deg] relative top-1' : ''} burger-line `}></div>
@@ -182,7 +184,7 @@ const items = langs.map(lang => ({
           </button>
         </div>
         <nav className='max-lg:hidden'>
-          <ul className='flex justify-center gap-10 fira font-normal text-base leading-[130%]'>
+          <ul className='flex justify-center gap-10 max-xl:gap-6 fira font-normal text-base leading-[130%]'>
             <li className='flex gap-1 items-center'>
               <button onClick={()=>setAboutModal((e)=> !e )} className='fira flex items-center gap-2 font-normal text-base leading-[130%]'>
                 About Us
@@ -212,14 +214,18 @@ const items = langs.map(lang => ({
 
           </ul>
         </nav>
+        </div>
 
-        <div className='flex gap-5 items-center'>
-          <div className='w-[312px] py-2 rounded-3xl flex focus-within:shadow-[0px_0px_8px_rgba(254,200,11,0.4)] px-4 border border-solid border-[#FEC80B]'>
+        <div className='flex gap-5 items-center max-md:gap-3 '>
+          <div className='w-[312px] py-2  max-xl:hidden rounded-3xl flex focus-within:shadow-[0px_0px_8px_rgba(254,200,11,0.4)] px-4 border border-solid border-[#FEC80B]'>
             <input className='outline-none w-[93%]' type="text" />
             <button>
               <SearchOutlined className='text-xl' />
             </button>
           </div>
+          <button className='max-md:block hidden'>
+            <SearchOutlined className='text-3xl' />
+          </button>
           <NavLink to={""} > <img src={cart} alt="" /> </NavLink>
           <NavLink to={""} > <img src={favorites} alt="" /> </NavLink>
            <Dropdown menu={{ items, onClick: handleMenuClick }} trigger={['click']}>
