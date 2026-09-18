@@ -129,14 +129,15 @@ const items = langs.map(lang => ({
 
         </div>
 
-        <div className='flex gap-[60px]'>
-          <div ref={hoursModalRef} className='flex flex-col relative'>
+        <div className='flex justify-between gap-[80px] max-lg:gap-[20px] items-center '>
+          <a ref={hoursModalRef} className='flex flex-col relative'>
             <button onClick={() => setHoursModalOpen((v) => !v)} className='flex w-full max-lg:hidden items-center justify-end gap-1 '>
               <span className='max-w-5xl text-[16px] leading-[1.3]'> Opening hours</span>
               <img className='transition-transform duration-300 ease-out' style={{ transform: hoursModalOpen ? "rotate(180deg)" : "rotate(0deg)" }} src={arrow} alt="arrow" />
             </button>
-
-            <span className='text-[15px] max-lg:max-w-42 max-md:hidden text-right leading-[1.13]  text-[#a2a2a2]'>Nizhny Novgorod, Torfyanaya Street, 35</span>
+              <span className='text-[15px] text-right max-md:hidden max-w-5xl leading-[1.13] whitespace-nowrap max-lg:max-w-[156px] max-lg:whitespace-normal max-lg:text-end text-[#a2a2a2]'>
+                Nizhny Novgorod, Torfyanaya Street, 35
+              </span>
             <div onClick={(e) => e.stopPropagation()} className={hoursModalOpen ? "flex flex-col gap-1 absolute right-0 top-5 text-end bg-white p-[14px] shadow-[0px_0px_24px_rgba(150,150,150,0.12)]" : "hidden"}>
               <div className='fira text-[14px] font-normal leading-none'>
                 <span > Mon-Fri:</span>
@@ -147,39 +148,45 @@ const items = langs.map(lang => ({
                 <span> Closed</span>
               </div>
             </div>
-          </div>
+          </a>
 
 
           <div className='flex gap-4'>
             <div className='flex flex-col max-md:hidden '>
               <div className='flex w-full items-center justify-end gap-1 '>
-                <span className='max-w-5xl text-[#a2a2a2] text-[16px] leading-[1.3]'> For regions:</span>
+                <span className=' text-[#a2a2a2] text-[16px] leading-[1.3]'> For regions:</span>
                 <a className='text-[#a2a2a2] text-[15px] leading-[1.13]' href="tel:88005110525">8 (800)-511-05-25</a>
               </div>
-              <div className='flex w-full items-center justify-end gap-1 '>
-                <span className='text-[15px] leading-[1.13]  text-[#a2a2a2]'>Nizhny Novgorod:</span>
+              <div className='flex max-lg:flex-col max-lg:items-end items-center gap-1 '>
+                <span className='text-left text-[#a2a2a2] text-[15px] whitespace-nowrap leading-[1.3]'>Nizhny Novgorod:</span>
 
-                <a className='text-[#a2a2a2] text-[15px] leading-[1.13] ' href="tel:88005110525">8 (831) 235-25-51</a>
+                <a className='text-[#a2a2a2] text-[15px] leading-[1.13] whitespace-nowrap  ' href="tel:88005110525">8 (831) 235-25-51</a>
               </div>
             </div>
-            <button onClick={openCallModal} className='bg-[#FEC80B] px-3 py-2 rounded-full '>
-              <img src={phone} alt="" />
+            <button onClick={openCallModal} className='bg-[#FEC80B] hidden md:flex px-3 py-2 rounded-full'>
+                
+                  <img src={phone} alt="" />
+
+                
             </button>
+            <a className='bg-[#FEC80B] flex md:hidden  px-3 py-2 rounded-full' href="tel:+998918295305">
+              <img src={phone} alt="" />
+            </a>
           </div>
         </div>
       </header>
       <hr className='text-[#FEC80B]' />
-      <div className='container  max-xl:px-4 max-lg:px-4 max-lg:pt-8   flex items-center gap-10 justify-between container pt-4 pb-8 '>
+      <div className='container  max-xl:px-4 max-lg:px-4 max-lg:pt-8  max-sm:justify-between flex items-center gap-10 justify-between container pt-4 pb-8 '>
         <div className='flex gap-8 items-center'>
           <div>
-          <button onClick={toggleCatalog} className='flex gap-4 px-5 py-2.5 rounded-sm border-none fira font-normal text-lg leading-[110%]  bg-[#fec80b] hover:bg-yellow items-center'>
+          <button onClick={toggleCatalog} className='flex gap-4 max-lg:gap-1  px-5 py-2.5  bg-[#fec80b] rounded-sm border-none  items-center'>
             <div className='flex flex-col gap-1 items-center'>
               <div className={`${catalogModal ? 'rotate-[45deg] relative top-1' : ''} burger-line `}></div>
               <div className={`${catalogModal ? 'hidden' : ' '} burger-line duration-200`} ></div>
               <div className={`${catalogModal ? 'rotate-[-45deg] relative top-[-2px]' : ''} burger-line`} ></div>
 
             </div>
-            Catalog
+            <span className=' hidden sm:inline fira font-normal text-lg leading-[110%]   hover:bg-yellow '>Catalog</span>
 
           </button>
         </div>
@@ -226,8 +233,8 @@ const items = langs.map(lang => ({
           <button className='max-md:block hidden'>
             <SearchOutlined className='text-3xl' />
           </button>
-          <NavLink to={""} > <img src={cart} alt="" /> </NavLink>
-          <NavLink to={""} > <img src={favorites} alt="" /> </NavLink>
+          <NavLink to={""} > <img className='w-[30px] h-[30px]' src={cart} alt="" /> </NavLink>
+          <NavLink to={""} > <img className='w-[30px] h-[30px]' src={favorites} alt="" /> </NavLink>
            <Dropdown menu={{ items, onClick: handleMenuClick }} trigger={['click']}>
         <Space >
           <span className={`fi fi-${selectedCode} w-12 h-12`}></span>
