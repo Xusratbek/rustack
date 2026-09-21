@@ -1,4 +1,4 @@
-import React from 'react'
+import {useState} from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import arrow from '../../assets/icons/arrow.png'
 
@@ -6,16 +6,23 @@ import arrow from '../../assets/icons/arrow.png'
 
 const CatologModal = ({catalogModal,aboutModal,mediaModal}) => {
 
+    const [hoursModalOpen, setHoursModalOpen] = useState(false)
+    const [aboutUsModalOpen,setAboutUsModalOpen]=useState(false)
+
+
+
+
+
   return (
     <div className={`${catalogModal || aboutModal || mediaModal ? 'block' : 'hidden'} absolute  w-full duration-300 bg-[#F9F9F9]`}>
         <div className='container px-4 py-2 grid grid-cols-3 max-sm:grid-cols-1 max-md:grid-cols-2 max-md:gap-6  gap-8 overflow-y-auto'>
                 <div className='flex flex-col gap-4'>
-                <h3 className='fira flex items-center gap-2 font-extrabold text-2xl '>
+                <h3 onClick={()=>setHoursModalOpen((e)=>!e)} className='fira flex items-center gap-2 font-extrabold text-2xl '>
                     Categories
-                    <img className='transition-transform duration-300 ease-out'  src={arrow} alt="arrow" />
+                    <img className=' hidden max-sm:block transition-transform duration-300 ease-out' style={{ transform: hoursModalOpen ? "rotate(180deg)" : "rotate(0deg)" }}  src={arrow} alt="arrow" />
                     
                 </h3>
-                <ul className='flex flex-col gap-4 [&>a]:hover:text-[#fec80b] [&>a]:duration-200 fira text-base font-normal leading-[130%] '>
+                <ul className={'flex flex-col gap-4 [&>a]:hover:text-[#fec80b] [&>a]:duration-200 fira text-base font-normal leading-[130%]'}>
                         <Link>Curtain cars</Link>
                         <Link>Truck-mounted cranes</Link>
                         <Link>Fuel tankers</Link>
@@ -32,7 +39,11 @@ const CatologModal = ({catalogModal,aboutModal,mediaModal}) => {
 
             </div>
             <div className='flex flex-col gap-4'>
-                <h3 className='fira font-extrabold text-2xl ' >About Us</h3>
+                <h3 className='fira font-extrabold text-2xl flex items-center gap-2' >
+                    About Us
+                    <img className='hidden max-sm:block transition-transform duration-300 ease-out' style={{ transform: aboutUsModalOpen ? "rotate(180deg)" : "rotate(0deg)" }}  src={arrow} alt="arrow" />
+                    
+                    </h3>
                 <ul className='flex flex-col gap-4 [&>a]:hover:text-[#fec80b] [&>a]:duration-200 fira text-base font-normal leading-[130%]'>
                     <Link>About Rustrak LLC</Link>
                     <Link>News</Link>

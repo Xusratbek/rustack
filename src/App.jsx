@@ -10,10 +10,13 @@ function App() {
   return (
     <>
     <Header />
-    <Routes>  
+    <main className="container">
+       <Routes>  
+      
       <Route path="/" element={<Home />} />
       
     </Routes>
+    </main>
     <Footer/>
      </>
   )

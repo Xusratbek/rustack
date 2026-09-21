@@ -1,9 +1,11 @@
 import React from 'react'
+import Main from '../../components/Main/Main'
 
 const Home = () => {
   return (
-    <div className=''>home
-        gfgdf
+    <div className=''>
+      <Main />
+        
     </div>
   )
 }

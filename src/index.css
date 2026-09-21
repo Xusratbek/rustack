@@ -60,3 +60,51 @@ input[type="checkbox"]::after {
 input[type="checkbox"]:checked::after {
   opacity: 1;
 }
+
+
+/* swiper  */
+
+.swiper {
+  height: 526px;
+  border-radius: 12px !important;
+  
+
+  
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  
+}
+
+.swiper-navigation-icon{
+  color: #FFFFFF;
+  
+
+}
+
+.swiper-pagination-bullet{
+  background-color: transparent !important;
+  border: 2px solid #FFFFFF !important;
+  width: 16px !important;
+  height: 16px !important;
+  opacity: 1 !important;
+}
+.swiper-pagination-bullet-active{
+  background-color: #FFFFFF !important;
+}
+
+.swiper-button-next, .swiper-button-prev{
+  width: 22px !important;
+  height: 22px !important;
+
+}
+
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
