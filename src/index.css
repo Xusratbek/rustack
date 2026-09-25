@@ -1,5 +1,4 @@
-    
-    @import "tailwindcss";
+@import "tailwindcss";
 
 
     .fira {
@@ -14,11 +13,10 @@
         
     }
 
-    
-
     button {
         cursor: pointer;
     }
+    
     .burger-line{
       width: 18px;
       height: 2px;
@@ -67,21 +65,21 @@ input[type="checkbox"]:checked::after {
 .swiper {
   height: 526px;
   border-radius: 12px !important;
-  
-
-  
 }
 
+
+
 .swiper-slide {
-  background-position: center;
-  background-size: cover;
+  border: 1px solid black;
+  border-radius: 4px;
+  height: max-content;
+
+
   
 }
 
 .swiper-navigation-icon{
   color: #FFFFFF;
-  
-
 }
 
 .swiper-pagination-bullet{
