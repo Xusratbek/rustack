@@ -1,6 +1,6 @@
 import "flag-icons/css/flag-icons.min.css";
 import { createRoot } from 'react-dom/client';
-import './i18n/i18n.js';
+import './i18n';
 import './index.css';
 
 import { BrowserRouter } from 'react-router-dom';

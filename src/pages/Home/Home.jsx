@@ -4,6 +4,7 @@ import Categories from '../../components/Categories/Categories'
 import About from '../../components/About/About'
 import Statistics from '../../components/Statistics/Statistics'
 import ProductDetail from '../../components/ProductDetail/ProductDetail'
+import Products from '../../components/Products/Products'
 
 
 const Home = () => {
@@ -16,7 +17,7 @@ const Home = () => {
       </div>
       <Statistics  />
       <ProductDetail />
-      
+      <Products />
     </div>
   )
 }

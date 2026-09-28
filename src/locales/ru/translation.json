@@ -1,0 +1,34 @@
+{
+    "productionAndSale":"производство и продажа автоспецтехники",
+    "workingHours":"Время работы",
+    "adress":"г. Нижний Новгород ул. Торфяная, 35",
+    "forRegions":"Для регионов",
+    "nizhnyNovgorod":"Нижний Новгород",
+    "monFri":"Пн–Пт",
+    "hour":"С 8:00 до 18:00",
+    "satSun":"Сб–Вс",
+    "closed":"Закрыто",
+    "catalog":"Каталог",
+    "aboutUs":"О нас",
+    "media":"Медиа",
+    "service":"Сервис",
+    "repair":"Ремонт",
+    "news":"Новости",
+    "contacts":"Контакты",
+    "request":"Заказать звонок",
+    "ourManager":"Наш менеджер свяжется с вами в ближайшее время.",
+    "yourName":"Ваше имя",
+    "yourNameInput":"Джон",
+    "phoneNumber":"Телефон",
+    "phoneNumberInput":"+7",
+    "agree":"Я согласен",
+    "processing":"на обработку персональных данных",
+    "submitRequest":"Отправить запрос"
+
+}
+
+
+
+
+
+
