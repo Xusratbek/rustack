@@ -34,20 +34,34 @@ const Main = () => {
   return (
     <>
       <Swiper
-        // loop={true}
-        // spaceBetween={30}
-        // effect={'fade'}
-        // navigation={true}
-        // pagination={{
-        //   clickable: true,
-        // }}
-        // autoplay={{
-        //   delay: 4000,
+        loop={true}
+        spaceBetween={30}
+        effect={'fade'}
+        navigation={true}
+        pagination={{
+          clickable: true,
+        }}
+        autoplay={{
+          delay: 4000,
 
-        // }}
+        }}
         modules={[EffectFade, Navigation, Pagination,]}
         className="mySwiper"
       >
+
+        <SwiperSlide>
+          <div className="bg-cover   bg-center bg-no-repeat h-full" style={{ backgroundImage: `url(${swiper3})` }}>
+            <div className='py-36 h-full w-[50%] px-8 bg-[linear-gradient(90deg,rgba(0,0,0,0.9)_0%,rgba(0,0,0,0.7)_54.17%,rgba(0,0,0,0.45)_80.73%,rgba(0,0,0,0)_100%)] '>
+              <h2 className='max-w-[441px] mb-[16px] text-3xl text-[#ffffff] leading-[1.1] fira font-bold'>Бортовые платформы со шторным механизмом</h2>
+              <p className='mb-[32px] max-w-[458px] text-base text-[#ffffff] leading-[1.5] font-normal fira'>Производство и поставка коммерческого транспорта, бортовых платформ, в том числе со сдвижными шторами, сдвижной крышей. </p>
+              <button className=' text-base w-[144px] h-[43px] fira text-[#000000] rounded-sm   bg-[#fec80b]'>Подробнее</button>
+
+            </div>
+
+          </div>
+        </SwiperSlide>
+
+        
         <SwiperSlide>
           <div className="bg-cover bg-center bg-no-repeat h-full" style={{ backgroundImage: `url(${swiper1})` }}>
             <div className='py-36 px-8'>
@@ -89,7 +103,7 @@ const Main = () => {
               <h2 className='max-w-[441px] mb-[16px] text-2xl text-[#ffffff] leading-[1.1] fira font-bold'>ООО «РусТрак»</h2>
               <p className='mb-[32px] max-w-[458px] text-base text-[#ffffff] leading-[1.5] font-normal fira'>Производство и поставка специализированной техники и спецтранспорта</p>
               <div className='flex gap-4'> 
-                <Link to="/about" className='text-base text-center content-center w-[185px] h-[43px] fira text-[#000000] rounded-sm bg-[#fec80b]'>Открыть каталог</Link>
+                <Link to="/about" className='text-base text-center content-center w-[144px] h-[43px] fira text-[#000000] rounded-sm bg-[#fec80b]'>Открыть каталог</Link>
 
                 <button onClick={openCallModal} className='border-2 w-[185px] hover:bg-[#fec80b] hover:text-[#000000] h-[43px] fira text-[#ffffff] rounded-sm  border-solid border-[#fec80b]'>Заказать звонок</button>
               </div>
@@ -97,10 +111,34 @@ const Main = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={swiper5} alt='swiper' />
+
+          <div className="bg-cover bg-center bg-no-repeat h-full" style={{ backgroundImage: `url(${swiper5})` }}>
+            <div className='py-36 px-8'>
+              <h2 className='max-w-[441px] mb-[16px] text-2xl text-[#ffffff] leading-[1.1] fira font-bold'>Краны манипуляторы на базе MCV/HCV грузовиков</h2>
+              <p className='mb-[32px] max-w-[458px] text-base text-[#ffffff] leading-[1.5] font-normal fira'>Производство автомобилей с крано-манипуляторными установками. Использование противосдвиговых пластин, установка блока распределителя управления задними опорами, открытый профиль HOSSEN, монтажные плиты в основании КМУ, окрас платформы в цвет крана.</p>
+              <div className='flex gap-4'> 
+                <Link  className='text-base text-center content-center w-[144px] h-[43px] fira text-[#000000] rounded-sm bg-[#fec80b]'>Подробнее</Link>
+
+                <button onClick={openCallModal} className='border-2 w-[185px] hover:bg-[#fec80b] hover:text-[#000000] h-[43px] fira text-[#ffffff] rounded-sm  border-solid border-[#fec80b]'>Заказать звонок</button>
+              </div>
+            </div>
+          </div>
+          
         </SwiperSlide>
         <SwiperSlide>
-          <img src={swiper6} alt='swiper' />
+
+           <div className="bg-cover bg-center bg-no-repeat h-full" style={{ backgroundImage: `url(${swiper6})` }}>
+            <div className='py-36 px-8'>
+              <h2 className='max-w-[441px] mb-[16px] text-2xl text-[#ffffff] leading-[1.1] fira font-bold'>Автотопливозаправщики на базе MCV/HCV грузовиков</h2>
+              <p className='mb-[32px] max-w-[458px] text-base text-[#ffffff] leading-[1.5] font-normal fira'>Производство и поставка автотопливозаправщиков объёмом 8 и 6 м.куб. Алюминиевые коммуникации, композитные напорно-всасывающие рукава, производительный узел выдачи топлива.</p>
+              <div className='flex gap-4'> 
+                <Link to="/about" className='text-base text-center content-center w-[144px] h-[43px] fira text-[#000000] rounded-sm bg-[#fec80b]'>Подробнее</Link>
+
+                <button onClick={openCallModal} className='border-2 w-[185px] hover:bg-[#fec80b] hover:text-[#000000] h-[43px] fira text-[#ffffff] rounded-sm  border-solid border-[#fec80b]'>Заказать звонок</button>
+              </div>
+            </div>
+          </div>
+
         </SwiperSlide>
       </Swiper>
       <Modal closeCallModal={closeCallModal} callModal={callModal} />
