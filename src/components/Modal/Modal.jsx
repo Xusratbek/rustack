@@ -8,7 +8,7 @@ const Modal = ({closeCallModal,callModal}) => {
   const { t } = useTranslation();
   
   return (
-    <div onClick={closeCallModal} className={`bg-[#0005] items-center justify-center absolute inset-0 top-0 left-0 ${callModal ? 'flex' : 'hidden' }`}>
+    <div onClick={closeCallModal} className={`bg-[#00000099] z-9 items-center justify-center absolute inset-0 top-0 left-0 ${callModal ? 'flex' : 'hidden' }`}>
         <div onClick={(e)=>e.stopPropagation()} className='z-10 mt-6 bg-white rounded-md'>
           <div className='flex justify-end p-2'> 
             <CloseOutlined style={{fontSize:"28px"}} onClick={closeCallModal} /> 
