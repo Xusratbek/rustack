@@ -9,8 +9,6 @@ html {
   scrollbar-gutter: stable;
 }
 
-
-
 .fira {
   font-family: "Fira Sans";
 }
@@ -124,5 +122,7 @@ input[type="checkbox"]:checked::after {
   height: 100%;
   object-fit: cover;
 }
+
+
 
 

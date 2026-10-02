@@ -12,22 +12,27 @@ import { Dropdown, Space } from 'antd';
 import CatologModal from '../Modal/CatologModal'
 import { useTranslation } from 'react-i18next'
 import search from '../../assets/icons/search.svg'
+import ru from "../../assets/icons/ru.svg"
+import us from "../../assets/icons/us.svg"
+import uz from "../../assets/icons/uz.svg"
+
+
 
 const languages = [
   {
     code: 'uz',
     label: 'UZ',
-    flag: 'https://flagcdn.com/w40/uz.png',
+    flag: uz,
   },
   {
     code: 'ru',
     label: 'RU',
-    flag: 'https://flagcdn.com/w40/ru.png',
+    flag: ru,
   },
   {
     code: 'en',
-    label: 'EN',
-    flag: 'https://flagcdn.com/w40/us.png',
+    label: 'US',
+    flag: us,
   },
 ];
 
@@ -208,7 +213,7 @@ const Header = () => {
         </div>
       </header>
       <hr className='text-[#FEC80B]' />
-      <div className='container  max-xl:px-4 max-lg:px-4 max-lg:pt-8  max-sm:justify-between flex items-center gap-10 justify-between container pt-2 pb-4 '>
+      <div className='container  max-xl:px-4 max-lg:px-4 max-lg:pt-8  max-sm:justify-between flex items-center gap-10 justify-between container pt-2 pb-6 '>
         <div className='flex gap-8 items-center'>
           <div>
             <button onClick={toggleCatalog} className='flex gap-4 max-lg:gap-1  px-5 py-2.5  bg-[#fec80b] rounded-sm border-none  items-center'>
