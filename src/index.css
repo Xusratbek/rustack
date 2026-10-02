@@ -72,7 +72,7 @@ input[type="checkbox"]:checked::after {
 
 .swiper {
   height: 526px;
-  border-radius: 12px !important;
+ 
 }
 
 .ant-space-item {
@@ -81,15 +81,15 @@ input[type="checkbox"]:checked::after {
   align-items: center;
 }
 
+.main-swiper{
+  border-radius: 14px;
+}
 
 
-.swiper-slide {
-  border: 1px solid black;
-  border-radius: 4px;
+
+.my-swiper{
+  
   height: max-content;
-
-
-
 }
 
 .swiper-navigation-icon {
@@ -116,12 +116,7 @@ input[type="checkbox"]:checked::after {
 }
 
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+
 
 
 

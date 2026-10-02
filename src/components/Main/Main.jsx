@@ -49,7 +49,7 @@ const Main = () => {
 
         }}
         modules={[EffectFade, Navigation, Pagination,]}
-        className="mySwiper"
+        className='main-swiper'
       >
 
         <SwiperSlide>
