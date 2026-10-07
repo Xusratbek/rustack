@@ -7,10 +7,20 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 import '../../index.css'
-import { Navigation, Pagination } from 'swiper/modules';
+import {Navigation,Pagination } from 'swiper/modules';
 
 import truck1 from '../../assets/images/truck1.webp'
 import truck2 from '../../assets/images/truck2.webp'
+import truck3 from '../../assets/images/truck3.webp'
+import truck4 from '../../assets/images/truck4.webp'
+import truck5 from '../../assets/images/truck5.webp'
+import truck6 from '../../assets/images/truck6.webp'
+import truck7 from '../../assets/images/truck7.webp'
+import truck8 from '../../assets/images/truck8.webp'
+import truck9 from '../../assets/images/truck9.webp'
+import truck10 from '../../assets/images/truck10.webp'
+import truck11 from '../../assets/images/truck11.webp'
+
 
 
 
@@ -59,56 +69,65 @@ const Categories = () => {
             slidsPerView: 4,
           }
         }}
-        modules={[Pagination, Navigation]}
+        modules={[Navigation,Pagination]}
         className="my-swiper"
       >
         <SwiperSlide>
-          <h4>Curtain cars</h4>
+          <h4>Шторные автомобили</h4>
           <p>30 models</p>
           <img  src={truck1} alt="" />
         </SwiperSlide>
 
         <SwiperSlide>
-          <h4>Truck-mounted cranes</h4>
+          <h4>Краны-манипуляторы</h4>
           <p>79 models</p>
           <img src={truck2} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <h4>Fuel tankers</h4>
+          <h4>Автотопливозаправщики</h4>
           <p>26 models</p>
-          <img src={} alt="" />
+          <img src={truck3} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <h4>Truck-mounted hydraulic lifts</h4>
+          <h4>Автогидроподъёмники</h4>
           <p>4 models</p>
+          <img src={truck4} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <h4>Tank trucks</h4>
+          <h4>Автоцистерны</h4>
           <p>10 models</p>
+          <img src={truck5} alt="" />
+
         </SwiperSlide>
         <SwiperSlide>
-          <h4>Car tow trucks</h4>
+          <h4>Автоэвакуаторы</h4>
           <p>2 models</p>
+          <img src={truck6} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <h4>Insulated vans</h4>
+          <h4>Изотермические фургоны</h4>
           <p>16 models</p>
+          <img src={truck7} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <h4>Container ships</h4>
+          <h4>Контейнеровозы</h4>
           <p>2 models</p>
+          <img src={truck8} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <h4>Hooklifts</h4>
+          <h4>Крюковые погрузчики</h4>
           <p>3 models</p>
+          <img src={truck9} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <h4>Dump trucks</h4>
+          <h4>Самосвалы</h4>
           <p>12 models</p>
+          <img src={truck10} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <h4>ADR vehicles category EXII</h4>
+          <h4>Автомобили ДОПОГ категория EXII</h4>
           <p>4 models</p>
+          <img src={truck11} alt="" />
         </SwiperSlide>
       </Swiper>
     </div>

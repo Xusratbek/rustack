@@ -108,6 +108,8 @@ input[type="checkbox"]:checked::after {
   background-color: #FFFFFF !important;
 }
 
+
+
 .swiper-button-next,
 .swiper-button-prev {
   width: 22px !important;
