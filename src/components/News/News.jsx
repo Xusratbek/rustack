@@ -2,9 +2,9 @@ import { useState } from 'react';
 import left from "../../assets/images/left.svg"
 import right from "../../assets/images/right.svg"
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
-
+import 'swiper/css/pagination';
 import { HeartOutlined } from '@ant-design/icons';
 import '../../index.css'
 import product1 from "../../assets/images/product1.webp"
@@ -23,20 +23,13 @@ import product13 from "../../assets/images/product13.webp"
 
 
 
-
-
-
-
-
 import { Heart } from 'lucide-react';
-
-const Products = () => {
-
-    return (
-        <div className='bg-[#F9F9F9] '>
+const News = () => {
+  return (
+    <div className='bg-[#F9F9F9] '>
             <div className='py-6 container'>
                 <div className='flex justify-between items-center'>
-                    <h2 className='fira font-medium text-4xl'>Рекомендуемая продукция</h2>
+                    <h2 className='fira font-medium text-4xl'>Новости</h2>
                     <div className='flex gap-4'>
                         <button id='category-prev' className='border-1 hover:bg-[#FEC80B] transition-all duration-300 ease-in-out w-[39px] rounded-sm flex items-center justify-center h-[39px] border-[#000000]'>
                             <img src={left} alt="left-btn" />
@@ -56,7 +49,9 @@ const Products = () => {
                         prevEl: '#category-prev',
                         nextEl: '#category-next',
                     }}
-                   
+                    pagination={{
+                        clickable: true,
+                    }}
                     breakpoints={{
                         0: {
                             slidesPerView: 1,
@@ -71,8 +66,8 @@ const Products = () => {
                             slidsPerView: 4,
                         }
                     }}
-                    modules={[Navigation]}
-                    className="products-swiper"
+                    modules={[Navigation, Pagination]}
+                    className="my-swiper"
                 >
                     <div className='w-full rounded-tl-[10px] '>
                         <SwiperSlide className='mt-6'>
@@ -409,16 +404,7 @@ const Products = () => {
             </div>
 
         </div>
-    )
+  )
 }
 
-export default Products
-
-
-
-
-
-
-
-
-
+export default News

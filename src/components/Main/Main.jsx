@@ -48,7 +48,7 @@ const Main = () => {
           delay: 4000,
 
         }}
-        modules={[EffectFade, Navigation, Pagination,]}
+        modules={[EffectFade, Navigation,Autoplay, Pagination,]}
         className='main-swiper'
       >
 

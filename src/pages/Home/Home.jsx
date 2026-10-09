@@ -5,6 +5,7 @@ import About from '../../components/About/About'
 import Statistics from '../../components/Statistics/Statistics'
 import ProductDetail from '../../components/ProductDetail/ProductDetail'
 import Products from '../../components/Products/Products'
+import News from '../../components/News/News'
 
 
 const Home = () => {
@@ -15,9 +16,10 @@ const Home = () => {
         <Categories />
         <About />
       </div>
-      <Statistics  />
+      <Statistics />
       <ProductDetail />
       <Products />
+      <News />
     </div>
   )
 }
