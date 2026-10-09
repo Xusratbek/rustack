@@ -2,12 +2,12 @@ import { useState } from 'react';
 import left from "../../assets/images/left.svg"
 import right from "../../assets/images/right.svg"
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { HeartOutlined } from '@ant-design/icons';
 import '../../index.css'
-import product1 from "../../assets/images/product1.webp"
+import news1 from "../../assets/images/news1.webp"
 import product2 from "../../assets/images/product2.webp"
 import product3 from "../../assets/images/product3.webp"
 import product4 from "../../assets/images/product4.webp"
@@ -23,7 +23,6 @@ import product13 from "../../assets/images/product13.webp"
 
 
 
-import { Heart } from 'lucide-react';
 const News = () => {
   return (
     <div className='bg-[#F9F9F9] '>
@@ -49,9 +48,7 @@ const News = () => {
                         prevEl: '#category-prev',
                         nextEl: '#category-next',
                     }}
-                    pagination={{
-                        clickable: true,
-                    }}
+                    
                     breakpoints={{
                         0: {
                             slidesPerView: 1,
@@ -66,7 +63,7 @@ const News = () => {
                             slidsPerView: 4,
                         }
                     }}
-                    modules={[Navigation, Pagination]}
+                    modules={[Navigation]}
                     className="my-swiper"
                 >
                     <div className='w-full rounded-tl-[10px] '>
@@ -74,8 +71,7 @@ const News = () => {
                             <div className=' '>
 
                                 <div className='relative '>
-                                    <img style={{ width: "312px", height: "260px" }} className=' object-cover ' src={product1} alt="" />
-                                    <Heart width={"30px"} height={"30px"} stroke-width="1.1" stroke="black" className="hover:fill-[#fec80b] absolute top-1 right-2" />
+                                    <img style={{ width: "312px", height: "260px" }} className=' object-cover ' src={news1} alt="" />
                                     <div className='px-3 py-4 bg-[transparent]'>
                                         <span className='fira text-lg max-w-[298px]  line-clamp-2 overflow-hidden leading-[1.2] text-[#000000]'>Кран-манипулятор SOLLERS TR80-47 с КМУ HKTC 3014 (модель 4389A8)</span>
                                         <span>Цена по запросу</span>
@@ -100,7 +96,6 @@ const News = () => {
 
                                 <div className='relative '>
                                     <img style={{ width: "312px", height: "260px" }} className=' object-cover rounded-tl-[10px]' src={product2} alt="" />
-                                    <Heart width={"30px"} height={"30px"} stroke-width="1.1" stroke="black" className="hover:fill-[#fec80b] absolute top-1 right-2" />
                                     <div className='px-3 py-4 bg-[transparent]'>
                                         <span className='fira text-lg max-w-[298px]  line-clamp-2 overflow-hidden leading-[1.2] text-[#000000]'>Кран-манипулятор КАМАЗ 43118 c КМУ ИНМАН ИМ150N (модель 4388С2-10)</span>
                                         <span>Цена по запросу</span>
@@ -124,7 +119,6 @@ const News = () => {
 
                                 <div className='relative '>
                                     <img style={{ width: "312px", height: "260px" }} className=' object-cover rounded-tl-[10px]' src={product3} alt="" />
-                                    <Heart width={"30px"} height={"30px"} stroke-width="1.1" stroke="black" className="hover:fill-[#fec80b] absolute top-1 right-2" />
                                     <div className='px-3 py-4 bg-[transparent]'>
                                         <span className='fira text-lg max-w-[298px]  line-clamp-2 overflow-hidden leading-[1.2] text-[#000000]'>Кран-манипулятор КАМАЗ 43118 c КМУ ИНМАН ИМ150N (модель 4388С2-10)</span>
                                         <span>Цена по запросу</span>
@@ -148,7 +142,6 @@ const News = () => {
 
                                 <div className='relative '>
                                     <img style={{ width: "312px", height: "260px" }} className=' object-cover rounded-tl-[10px]' src={product4} alt="" />
-                                    <Heart width={"30px"} height={"30px"} stroke-width="1.1" stroke="black" className="hover:fill-[#fec80b] absolute top-1 right-2" />
                                     <div className='px-3 py-4 bg-[transparent]'>
                                         <span className='fira text-lg max-w-[298px]  line-clamp-2 overflow-hidden leading-[1.2] text-[#000000]'>Кран-манипулятор КАМАЗ 43118 c КМУ ИНМАН ИМ150N (модель 4388С2-10)</span>
                                         <span>Цена по запросу</span>
@@ -172,7 +165,6 @@ const News = () => {
 
                                 <div className='relative '>
                                     <img style={{ width: "312px", height: "260px" }} className=' object-cover rounded-tl-[10px]' src={product5} alt="" />
-                                    <Heart width={"30px"} height={"30px"} stroke-width="1.1" stroke="black" className="hover:fill-[#fec80b] absolute top-1 right-2" />
                                     <div className='px-3 py-4 bg-[transparent]'>
                                         <span className='fira text-lg max-w-[298px]  line-clamp-2 overflow-hidden leading-[1.2] text-[#000000]'>Кран-манипулятор КАМАЗ 43118 c КМУ ИНМАН ИМ150N (модель 4388С2-10)</span>
                                         <span>Цена по запросу</span>
@@ -197,7 +189,6 @@ const News = () => {
 
                                 <div className='relative '>
                                     <img style={{ width: "312px", height: "260px" }} className=' object-cover rounded-tl-[10px]' src={product6} alt="" />
-                                    <Heart width={"30px"} height={"30px"} stroke-width="1.1" stroke="black" className="hover:fill-[#fec80b] absolute top-1 right-2" />
                                     <div className='px-3 py-4 bg-[transparent]'>
                                         <span className='fira text-lg max-w-[298px]  line-clamp-2 overflow-hidden leading-[1.2] text-[#000000]'>Кран-манипулятор КАМАЗ 43118 c КМУ ИНМАН ИМ150N (модель 4388С2-10)</span>
                                         <span>Цена по запросу</span>
@@ -223,7 +214,6 @@ const News = () => {
 
                                 <div className='relative '>
                                     <img style={{ width: "312px", height: "260px" }} className=' object-cover rounded-tl-[10px]' src={product7} alt="" />
-                                    <Heart width={"30px"} height={"30px"} stroke-width="1.1" stroke="black" className="hover:fill-[#fec80b] absolute top-1 right-2" />
                                     <div className='px-3 py-4 bg-[transparent]'>
                                         <span className='fira text-lg max-w-[298px]  line-clamp-2 overflow-hidden leading-[1.2] text-[#000000]'>Кран-манипулятор КАМАЗ 43118 c КМУ ИНМАН ИМ150N (модель 4388С2-10)</span>
                                         <span>Цена по запросу</span>
@@ -249,7 +239,6 @@ const News = () => {
 
                                 <div className='relative '>
                                     <img style={{ width: "312px", height: "260px" }} className=' object-cover rounded-tl-[10px]' src={product8} alt="" />
-                                    <Heart width={"30px"} height={"30px"} stroke-width="1.1" stroke="black" className="hover:fill-[#fec80b] absolute top-1 right-2" />
                                     <div className='px-3 py-4 bg-[transparent]'>
                                         <span className='fira text-lg max-w-[298px]  line-clamp-2 overflow-hidden leading-[1.2] text-[#000000]'>Кран-манипулятор КАМАЗ 43118 c КМУ ИНМАН ИМ150N (модель 4388С2-10)</span>
                                         <span>Цена по запросу</span>
@@ -274,7 +263,6 @@ const News = () => {
 
                                 <div className='relative '>
                                     <img style={{ width: "312px", height: "260px" }} className=' object-cover rounded-tl-[10px]' src={product9} alt="" />
-                                    <Heart width={"30px"} height={"30px"} stroke-width="1.1" stroke="black" className="hover:fill-[#fec80b] absolute top-1 right-2" />
                                     <div className='px-3 py-4 bg-[transparent]'>
                                         <span className='fira text-lg max-w-[298px]  line-clamp-2 overflow-hidden leading-[1.2] text-[#000000]'>Кран-манипулятор КАМАЗ 43118 c КМУ ИНМАН ИМ150N (модель 4388С2-10)</span>
                                         <span>Цена по запросу</span>
@@ -300,7 +288,6 @@ const News = () => {
 
                                 <div className='relative '>
                                     <img style={{ width: "312px", height: "260px" }} className=' object-cover rounded-tl-[10px]' src={product10} alt="" />
-                                    <Heart width={"30px"} height={"30px"} stroke-width="1.1" stroke="black" className="hover:fill-[#fec80b] absolute top-1 right-2" />
                                     <div className='px-3 py-4 bg-[transparent]'>
                                         <span className='fira text-lg max-w-[298px]  line-clamp-2 overflow-hidden leading-[1.2] text-[#000000]'>Кран-манипулятор КАМАЗ 43118 c КМУ ИНМАН ИМ150N (модель 4388С2-10)</span>
                                         <span>Цена по запросу</span>
@@ -325,7 +312,6 @@ const News = () => {
 
                                 <div className='relative '>
                                     <img style={{ width: "312px", height: "260px" }} className=' object-cover rounded-tl-[10px]' src={product11} alt="" />
-                                    <Heart width={"30px"} height={"30px"} stroke-width="1.1" stroke="black" className="hover:fill-[#fec80b] absolute top-1 right-2" />
                                     <div className='px-3 py-4 bg-[transparent]'>
                                         <span className='fira text-lg max-w-[298px]  line-clamp-2 overflow-hidden leading-[1.2] text-[#000000]'>Кран-манипулятор КАМАЗ 43118 c КМУ ИНМАН ИМ150N (модель 4388С2-10)</span>
                                         <span>Цена по запросу</span>
@@ -348,7 +334,6 @@ const News = () => {
                             <div className=' '>
                                 <div className='relative '>
                                     <img style={{ width: "312px", height: "260px" }} className=' object-cover rounded-tl-[10px]' src={product12} alt="" />
-                                    <Heart width={"30px"} height={"30px"} stroke-width="1.1" stroke="black" className="hover:fill-[#fec80b] absolute top-1 right-2" />
                                     <div className='px-3 py-4 bg-[transparent]'>
                                         <span className='fira text-lg max-w-[298px]  line-clamp-2 overflow-hidden leading-[1.2] text-[#000000]'>Кран-манипулятор КАМАЗ 43118 c КМУ ИНМАН ИМ150N (модель 4388С2-10)</span>
                                         <span>Цена по запросу</span>
@@ -373,7 +358,6 @@ const News = () => {
                             <div className=' '>
                                 <div className='relative '>
                                     <img style={{ width: "312px", height: "260px" }} className=' object-cover rounded-tl-[10px]' src={product13} alt="" />
-                                    <Heart width={"30px"} height={"30px"} stroke-width="1.1" stroke="black" className="hover:fill-[#fec80b] absolute top-1 right-2" />
                                     <div className='px-3 py-4 bg-[transparent]'>
                                         <span className='fira text-lg max-w-[298px]  line-clamp-2 overflow-hidden leading-[1.2] text-[#000000]'>Кран-манипулятор КАМАЗ 43118 c КМУ ИНМАН ИМ150N (модель 4388С2-10)</span>
                                         <span>Цена по запросу</span>

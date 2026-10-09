@@ -23,11 +23,6 @@ import product13 from "../../assets/images/product13.webp"
 
 
 
-
-
-
-
-
 import { Heart } from 'lucide-react';
 
 const Products = () => {

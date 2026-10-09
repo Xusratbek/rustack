@@ -132,19 +132,19 @@ const Header = () => {
   };
 
   useEffect(() => {
-    const scrollClosed = callModal || catalogModal || aboutModal || mediaModal
+    const scrollClosed = callModal
 
     if (scrollClosed) {
       document.body.style.overflow = 'hidden'
     } else {
-      document.body.style.overflow = ''
+      document.body.style.overflow = 'auto'
     }
 
 
     return () => {
       document.body.style.overflow = ''
     }
-  }, [callModal, catalogModal, aboutModal, mediaModal])
+  }, [callModal])
 
 
 

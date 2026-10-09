@@ -4,20 +4,23 @@ import Header from "./components/Header/Header.jsx"
 import Footer from "./components/Footer/Footer.jsx"
 import About from "./pages/About/About.jsx"
 
+import './index.css'
 
 function App() {
 
 
   return (
     <>
-      
-    <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
-    <Footer/>
-     </>
+
+      <Header />
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </main>
+      <Footer />
+    </>
   )
 }
 

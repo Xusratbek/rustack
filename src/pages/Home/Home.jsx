@@ -6,6 +6,8 @@ import Statistics from '../../components/Statistics/Statistics'
 import ProductDetail from '../../components/ProductDetail/ProductDetail'
 import Products from '../../components/Products/Products'
 import News from '../../components/News/News'
+import Anyquestion from '../../components/AnyQuestion/Anyquestion'
+import Footer from '../../components/Footer/Footer'
 
 
 const Home = () => {
@@ -20,6 +22,8 @@ const Home = () => {
       <ProductDetail />
       <Products />
       <News />
+      <Anyquestion />
+
     </div>
   )
 }
