@@ -6,7 +6,6 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import Modal from '../Modal/Modal'
 import swiper1 from '../../assets/images/swiper1.webp'
-import swiper2 from '../../assets/images/swiper2.webp'
 import swiper3 from '../../assets/images/swiper3.webp'
 import swiper4 from '../../assets/images/swiper4.webp'
 import swiper5 from '../../assets/images/swiper5.webp'
@@ -66,18 +65,7 @@ const Main = () => {
         </SwiperSlide>
 
 
-        <SwiperSlide>
-          <div className="bg-cover bg-center bg-no-repeat h-full" style={{ backgroundImage: `url(${swiper2})` }}>
-            <div className='py-32 px-8'>
-              <h2 className='max-w-[441px] mb-[16px] text-[28px] text-[#ffffff] leading-[1.1] fira font-bold'>{t("slide2Title")} </h2>
-              <p className='mb-[32px] text-base text-[#ffffff] leading-[1.5] font-normal fira'>{t("slide2Text")}</p>
-              <button onClick={openCallModal} className='border-2 w-[185px] h-[43px] fira text-[#ffffff] rounded-sm  border-solid border-[#fec80b]'>{t("slide2Button")}</button>
-
-            </div>
-
-          </div>
-
-        </SwiperSlide>
+        
 
 
 

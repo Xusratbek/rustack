@@ -15,7 +15,7 @@ const CatologModal = ({ catalogModal, aboutModal, mediaModal }) => {
 
 
     return (
-        <div className={`${catalogModal || aboutModal || mediaModal ? 'block' : 'hidden'} absolute z-50 top-[19%]  w-full h-[100vh] duration-300 bg-[#F9F9F9]`}>
+        <div className={`${catalogModal || aboutModal || mediaModal ? 'block' : 'hidden'} absolute z-48 top-[19%]  w-full h-[100vh] duration-300 bg-[#F9F9F9]`}>
             <div className='container py-4 grid grid-cols-3 max-sm:grid-cols-1 max-md:grid-cols-2 max-md:gap-6  gap-8 overflow-y-auto'>
                 <div className='flex flex-col gap-4'>
                     <h3 onClick={() => setHoursModalOpen((e) => !e)} className='fira flex items-center gap-2 font-extrabold text-2xl '>

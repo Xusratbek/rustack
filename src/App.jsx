@@ -5,9 +5,16 @@ import Footer from "./components/Footer/Footer.jsx"
 import About from "./pages/About/About.jsx"
 
 import './index.css'
+import Service from "./pages/Service/Service.jsx"
+import Anyquestion from "./components/AnyQuestion/Anyquestion.jsx"
+import Contacts from "./pages/Contacts/Contacts.jsx"
+
+
 
 function App() {
 
+  
+  
 
   return (
     <>
@@ -17,8 +24,12 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/service" element={<Service />} />
+          <Route path="/contact" element={<Contacts />} />
+
         </Routes>
       </main>
+       <Anyquestion />
       <Footer />
     </>
   )
