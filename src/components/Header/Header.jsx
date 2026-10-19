@@ -132,7 +132,7 @@ const Header = () => {
   };
 
   useEffect(() => {
-    const scrollClosed = callModal
+    const scrollClosed = callModal || catalogModal
 
     if (scrollClosed) {
       document.body.style.overflow = 'hidden'
@@ -144,7 +144,7 @@ const Header = () => {
     return () => {
       document.body.style.overflow = ''
     }
-  }, [callModal])
+  }, [callModal,catalogModal])
 
 
 
@@ -153,7 +153,7 @@ const Header = () => {
       <header className='container pt-3.5 max-lg:pt-3 max-lg:pb-1 max-lg:px-4 max-xl:px-[1%] pb-2 flex justify-between w-full  '>
         <div className='flex items-center gap-1.5' >
 
-          <a href="">
+          <a href="/">
             <img src={logo} alt="logo" />
           </a>
           <div className='h-5.75 w-0.5 bg-[#FEC80B] max-lg:hidden '>
@@ -244,16 +244,16 @@ const Header = () => {
                 </button>
               </li>
               <li className='flex items-center'>
-                <NavLink className='fira font-normal text-base leading-[130%]' to={""}> {t("service")} </NavLink>
+                <NavLink className='fira font-normal text-base leading-[130%]' to={"/service"}> {t("service")} </NavLink>
               </li>
               <li className='flex items-center'>
-                <NavLink className='fira font-normal text-base leading-[130%]' to={""}> {t("repair")} </NavLink>
+                <NavLink className='fira font-normal text-base leading-[130%]' to={"/remont"}> {t("repair")} </NavLink>
               </li>
               <li className='flex items-center'>
                 <NavLink className='fira font-normal text-base leading-[130%]' to={""}> {t("news")} </NavLink>
               </li>
               <li className='flex items-center'>
-                <NavLink className='fira font-normal text-base leading-[130%]' to={""}> {t("contacts")} </NavLink>
+                <NavLink className='fira font-normal text-base leading-[130%]' to={"/contact"}> {t("contacts")} </NavLink>
               </li>
 
             </ul>

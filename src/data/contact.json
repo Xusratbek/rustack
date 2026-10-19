@@ -1,33 +1,35 @@
-import general from '../assets/images/general.webp'
-
 
   [
   {
-    "img":general,
+    "img":"/general.webp",
     "full_name": "Шаронов Сергей Владимирович",
     "position": "Генеральный директор",
     "phone": "8 (831) 225-00-55",
     "email": "komdir@rtrf.ru"
   },
   {
+    "img":"/direktor.webp",
     "full_name": "Сучков Александр Алексеевич",
     "position": "Коммерческий директор",
     "phone": "8 (831) 225-00-55",
     "email": "sale@rtrf.ru"
   },
   {
+    "img":"/manager.webp",
     "full_name": "Савенко Екатерина Юрьевна",
     "position": "Менеджер по продажам",
     "phone": "88312352517 доб.214",
     "email": "RK+8425@rtrf.ru"
   },
   {
+    "img":"/manager1.webp",
     "full_name": "Сергеева Юлия Юрьевна",
     "position": "Менеджер по продажам",
     "phone": "88312352517 доб.215",
     "email": "sale4+8425@rtrf.ru"
   },
    {
+    "img":"/diler.webp",
     "full_name": "Конев Максим Анатольевич",
     "position": "Руководитель направления развития дилерской сети",
     "phone": "88312250055 доб.213",
@@ -35,6 +37,7 @@ import general from '../assets/images/general.webp'
     "email": "sale3@rtrf.ru"
   },
   {
+    "img":"/rukovaditel.webp",
     "full_name": "Киселёв Иван Александрович",
     "position": "Руководитель отдела по сертификации ООО «РусТрак»",
     "phone": "88312250055 доб.212",
@@ -42,18 +45,21 @@ import general from '../assets/images/general.webp'
     "email": "sale2@rtrf.ru"
   },
   {
+     "img":"/konstruktor.webp",
     "full_name": "Шалявин Дмитрий Леонидович",
     "position": "Главный конструктор",
     "phone": "88312250055 доб.701",
     "email": "kb@rtrf.ru"
   },
   {
+    "img":"/injener.webp",
     "full_name": "Ярилин Александр Валерьевич",
     "position": "Инженер по гарантии",
     "phone": "88312250055 доб.610",
     "email": "kb1@rtrf.ru"
   },
    {
+    "img":"/nachalnik.webp",
     "full_name": "Мuрeев Александр Евгеньевич",
     "position": "Начальник ОТК",
     "phone": "88312250055 доб.601",
@@ -61,6 +67,7 @@ import general from '../assets/images/general.webp'
     "email": "OTK@rtrf.ru"
   },
   {
+    "img":"/otdel.webp",
     "full_name": "Иванов Сергей Иванович",
     "position": "Руководитель отдела снабжения",
     "phone": "88312250055 доб.401",
