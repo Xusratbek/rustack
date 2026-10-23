@@ -107,6 +107,11 @@ input[type="checkbox"]:checked::after {
   height: max-content;
 }
 
+.my-about{
+  height: max-content;
+  
+}
+
 .swiper-navigation-icon {
   color: #FFFFFF;
 }

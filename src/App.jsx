@@ -10,13 +10,16 @@ import Service from "./pages/Service/Service.jsx"
 import Anyquestion from "./components/AnyQuestion/Anyquestion.jsx"
 import Contacts from "./pages/Contacts/Contacts.jsx"
 import Remont from "./pages/Remont/Remont.jsx"
+import Partners from "./pages/Partners/Partners.jsx"
+import Production from "./pages/Production/Production.jsx"
+import Suppliers from "./pages/Suppliers/Suppliers.jsx"
 
 
 
 function App() {
 
-  
-  
+
+
 
   return (
     <>
@@ -28,11 +31,14 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/service" element={<Service />} />
           <Route path="/contact" element={<Contacts />} />
-          <Route path="/remont" element={<Remont /> } />
-          
+          <Route path="/remont" element={<Remont />} />
+          <Route path="/partners" element={<Partners />} />
+          <Route path="/production" element={<Production />} />
+          <Route path="/suppliers" element={<Suppliers />} />
+
         </Routes>
       </main>
-       <Anyquestion />
+      <Anyquestion />
       <Footer />
     </>
   )
